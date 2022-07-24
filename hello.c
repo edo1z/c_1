@@ -1,6 +1,14 @@
 #include <stdio.h>
 
-main()
+int fn_a(int b)
 {
-  printf("hello, world\n");
+  return b * 3;
 }
+
+int main()
+{
+  int a = fn_a(3);
+  printf("%d\n", a);
+  return 0;
+}
+
