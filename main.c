@@ -1,5 +1,6 @@
-#include "factorial.h"
 #include <stdio.h>
+
+#include "factorial.h"
 
 int main(void) {
   int a = factorial(10);
