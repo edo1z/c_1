@@ -2,3 +2,6 @@
 *.o
 .DS_Store
 main
+bin
+.cache
+compile_commands.json
