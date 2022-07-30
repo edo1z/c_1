@@ -1,9 +1,9 @@
 bin/main: bin/main.o bin/factorial.o
-	gcc $^ -o $@ -Wall
+	clang -o $@ -Wall $^ 
 
-bin/main.o: main.c factorial.h
-	gcc $< -c -o $@ -Wall
+bin/main.o: main.c 
+	clang -c -I. -o $@ -Wall $< 
 
 bin/factorial.o: factorial.c
-	gcc $^ -c -o $@ -Wall
+	clang -c -o $@ -Wall $^ 
 
