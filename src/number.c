@@ -20,3 +20,10 @@ int fibo(int idx) {
   }
   return val1;
 }
+
+/* 最大公約数（ユークリッドの互除法） */
+int gcd(int a, int b) {
+  int r = a % b;
+  if (r == 0) return b;
+  return gcd(b, r);
+}
